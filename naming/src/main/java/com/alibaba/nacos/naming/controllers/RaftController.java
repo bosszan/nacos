@@ -66,6 +66,9 @@ public class RaftController {
     @Autowired
     private RaftCore raftCore;
 
+    /**
+     * 发起Leader选举
+     */
     @PostMapping("/vote")
     public JSONObject vote(HttpServletRequest request, HttpServletResponse response) throws Exception {
 
